@@ -1,0 +1,15 @@
+[2026-11-22 19:45:01] [INFO] === INICIO DE SIMULACIÓN DEL SISTEMA SOFTWARE FJ ===
+[2026-11-22 19:45:01] [INFO] Cliente registrado: Cliente [CLI-001] Laura Gómez | Correo: laura.gomez@correo.com | Tel: 3104567890
+[2026-11-22 19:45:01] [INFO] Cliente registrado: Cliente [CLI-002] Carlos Méndez | Correo: carlos.mendez@empresa.co | Tel: 3209876543
+[2026-11-22 19:45:01] [ERROR] Operación 3 controlada: [ERR_CLIENTE] Correo electrónico inválido: 'correo-sin-arroba'.
+[2026-11-22 19:45:01] [ERROR] Operación 4 controlada con encadenamiento: [ERR_CLIENTE] ID de cliente inválido: El identificador de la entidad debe ser un texto no vacío. | Causa encadenada: ValueError('El identificador de la entidad debe ser un texto no vacío.')
+[2026-11-22 19:45:01] [INFO] Servicio registrado: Reserva de Sala [SRV-001] 'Sala Ejecutiva Norte' (Capacidad: 12 personas) | Tarifa base: $50,000.00 | Estado: Disponible
+[2026-11-22 19:45:01] [INFO] Servicio registrado: Alquiler de Equipo [SRV-002] 'Portátil Desarrollo Workstation' (Unidades: 5) | Tarifa base: $80,000.00 | Estado: Disponible
+[2026-11-22 19:45:01] [INFO] Servicio registrado: Asesoría [SRV-003] 'Arquitectura Cloud y Seguridad' - Especialidad: Cloud Computing | Tarifa base: $120,000.00 | Estado: No disponible
+[2026-11-22 19:45:01] [ERROR] Operación 8 controlada: [ERR_CALCULO] La tarifa base debe ser mayor que cero.
+[2026-11-22 19:45:01] [INFO] Reserva creada: Reserva [RES-001] | Estado: PENDIENTE | Cliente: Laura Gómez | Servicio: Sala Ejecutiva Norte | Duración: 4 | Total: Pendiente de cálculo
+[2026-11-22 19:45:01] [INFO] Operación 9 finalizada con estado: PROCESADA ($232,050.00)
+[2026-11-22 19:45:01] [ERROR] Operación 10 controlada (servicio no disponible): [ERR_SERVICIO_DISP] El servicio 'Arquitectura Cloud y Seguridad' (ID: SRV-003) no está disponible.
+[2026-11-22 19:45:01] [ERROR] Operación 11 controlada (duración inválida): [ERR_SERVICIO_DATOS] El alquiler de equipo debe ser de al menos 1 día.
+[2026-11-22 19:45:01] [ERROR] Operación 12 controlada (operación no permitida): [ERR_RESERVA] No se puede cancelar la reserva 'RES-001' porque ya está PROCESADA.
+[2026-11-22 19:45:01] [INFO] === FIN SIMULACIÓN | Clientes: 2 | Servicios: 3 | Reservas: 1 ===
